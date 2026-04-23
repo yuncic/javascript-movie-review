@@ -63,6 +63,14 @@ p.rate > span {
     }
 }
 
+@media only screen and (width < 480px) {
+    .thumbnail-list {
+        margin: 0 auto 56px;
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+    }
+}
+
 @media only screen and (480px<= width <= 800px) {
     .thumbnail-list {
         margin: 0 auto 56px;

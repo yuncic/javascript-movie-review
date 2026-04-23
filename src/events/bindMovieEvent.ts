@@ -110,20 +110,6 @@ export const bindMoreMovieEvents = (state: State) => {
         }
     });
     observer.observe(firstTarget as HTMLElement);
-
-    // const displayMoreBtn = document.querySelector('.display-more-btn')
-    // displayMoreBtn?.addEventListener('click', async () => {
-    //     state.pageNum++
-
-    //     addMovieSkeletonUIList(movieDisplay)
-
-    //     let movieList
-    //     movieList = await callMovieList(state.pageNum, state.searchBarText)
-
-    //     // 영화 20개
-    //     removeMovieSkeletonUIList(movieDisplay)
-    //     addMovieList(movieDisplay, movieList)
-    // })
 };
 
 export const movieViewFlow = async (state: State, movieDisplay: HTMLUListElement) => {
